@@ -8,7 +8,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = "ksh";
   const delivery_charges = 0;
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const url = "https://extro-intro-backend-v1du.onrender.com";
   const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
